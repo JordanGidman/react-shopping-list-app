@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 6.2rem;
+  margin-bottom: 4rem;
+}
+
+.shopping-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  width: 80%;
+  height: 80%;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.user-input,
+.submit-item-btn {
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  width: 40%;
+  align-self: center;
+}
+
+.submit-item-btn {
+  /* padding: 1.2rem; */
+  border: none;
+  background-color: #fab005;
+  color: black;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.submit-item-btn:hover {
+  transform: scale(1.05);
+  background-color: #f59f00;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe8cc;
+  padding: 1.2rem;
+  font-size: 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+
+.item-text {
+  font-weight: 600;
+}
+
+.delete-item-btn {
+  border: none;
+  padding: 0.4rem;
+  background-color: #ffe8cc;
+
+  transition: all 0.3s;
+}
+
+.delete-item-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
