@@ -1,11 +1,10 @@
-import List from "./List";
-
 export default function ShoppingList({
   onUpdateItems,
   items,
-  onDeleteItems,
+
   userInput,
   setUserInput,
+  children,
 }) {
   function handleSubmit(e) {
     e.preventDefault();
@@ -35,7 +34,7 @@ export default function ShoppingList({
         <button className="submit-item-btn">Add Item</button>
       </form>
 
-      <List onDeleteItems={onDeleteItems} items={items} />
+      {children}
     </main>
   );
 }
