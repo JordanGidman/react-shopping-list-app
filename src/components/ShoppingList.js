@@ -1,7 +1,5 @@
 export default function ShoppingList({
   onUpdateItems,
-  items,
-
   userInput,
   setUserInput,
   children,
